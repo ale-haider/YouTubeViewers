@@ -19,7 +19,10 @@
                        Text="Add YouTube Viewer" 
                        />
         <!--there should be no space after colon when importing a user control component-->
-        <components:YouTubeViewerDetailsForm Margin="0,30,0,0" Grid.Row="1"/>
+        <components:YouTubeViewerDetailsForm
+            DataContext="{Binding YouTubeViewerDetailsFormViewModel}"
+            Margin="0,30,0,0" 
+            Grid.Row="1"/>
 
 
     </Grid>
